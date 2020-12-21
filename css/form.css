@@ -1,0 +1,55 @@
+.form-container {
+    background-color: var(--light-background);
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-desktop { /*only for blogpost*/
+    max-width: 700px;
+    margin: 0 auto 3em;
+    border-radius: 0px;
+}
+
+.form-title {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: .50rem;
+}
+
+.form input:not(:last-child) {
+    padding: .60em;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+.form-button {
+    background-color: var(--dark);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: all .3s ease;
+    outline: none;
+}
+
+.form-button:hover {
+    background-color: var(--light-green);
+}

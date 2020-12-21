@@ -1,0 +1,31 @@
+@import url("navMenu.css");
+@import url("cards.css");
+@import url("form.css");
+@import url("post.css");
+@import url("footer.css");
+
+
+:root {
+    --dark: #333333;
+    --white: #ffffff;
+    --light-background: #E8E8E8;
+    --light-green: #4CAF50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+}
+
+main {
+    margin: 0 1em;
+}

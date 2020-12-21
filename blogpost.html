@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0e4aef26a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="bloghome.html">Home</a></li>
+                <li><a href="blogpost.html">Blog post</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post">
+            <div class="author-info">
+
+                <div class="info">
+                    <img class="info-img" src="https://media-exp1.licdn.com/dms/image/C4D03AQG0AnD4LseJFw/profile-displayphoto-shrink_400_400/0/1516624101444?e=1614211200&v=beta&t=HMbFAefuxImausdf3bbx-wHOo3v61mzHK38Dk0aH5gw" alt="">
+                    <span class="info-name">Filipe Portes</span>
+                    <span class="info-title">Senior Software Engineer</span>
+                </div>
+
+                <div class="social">
+
+                    <a href="https://www.linkedin.com/in/filipe-portes-93327b17/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/filipeportes" target="_blank"><i class="fab fa-github"></i></a>
+                    
+                </div>
+
+            </div>
+
+            <!--Post-->
+            <article class="blog-post">
+                <h1 class="blog-post_title">Remote Work Tips</h1>
+                <p>Recently many companies are adopting remote work polices to avoid the fast spreading of the coronavirus, also called COVID-19, 
+                    on the office. But it is not easy at all to develop that fast a culture that supports effective remote work. Since I’ve spent 
+                    3 years working 100% from home, I’ll try to collect here some tips that helped me and my teams to have very productive work 
+                    during this time!
+                </p>
+
+                <h1 class="blog-post_title">Your work environment</h1>
+                <p>It’s easy to assume that, while working from home you can basically sit in bed, in front of the TV, or in the kitchen table… 
+                    well, I can assure you that it doesn’t work at all!!
+                </p>
+
+                <ol>
+                    <li>If you intend to work for more than a couple hours, it is a game-changer to set up a proper environment, <strong> at the very least
+                         a proper desk and chair</strong>, where you can sit for the day without needing physiotherapy after.</li>
+                    <li>Other accessories that will help a lot: external monitor, keyboard and mouse and the most important one: <strong>a good headset!!</strong>
+                    </li>
+                    <li>You will also need a <strong> internet connection</strong> and energy supply, that’s usually available in our homes, but you can see 
+                        that remote work is not exactly working from anywhere.
+                    </li>
+                </ol>
+
+                <h1 class="blog-post_title">Communication</h1>
+                <p>It is a myth that doing home-office the communication between teams is worse, in fact, It can become even better because we 
+                    need to make sure all information is available to everyone at any time!
+                </p>
+
+                <ul>
+                    <li><strong>EMAIL:</strong> Asynchronous communication and Informations (I don’t expect an answer soon or at all)
+                        ex: I need to inform my whole team about an update in our monitoring tool.
+                    </li>
+                    <li><strong>SLACK:</strong> Synchronous communication but not urgent, questions, reminders, and notifications (I expect an answer soon or that 
+                        people will get notified)
+                    </li>
+                    <li><strong>GOOGLE MEET:</strong> Synchronous and more urgent communication or long topics
+                        ex: A talk about a test is getting big in slack, it is already difficult to keep a context and the channel is flooded: time to move to a call!
+                        ex: I need to align a rule change between me and other 3 people, most probably a quick call will be faster than other tools.
+                    </li>
+                </ul>
+
+                <h1 class="blog-post_title">Work-life balance</h1>
+                <p>Another myth about remote work is that you work less, in my experience is very easy to end up working way more than in the office, and you need to 
+                    pay attention to avoid working extra hours in an inefficient way or mixing your working time with personal time.
+                </p>
+
+                <p>My main tips to help with that:</p>
+
+                <ol>
+                    <li><strong>Have a separated work environment,</strong> It is very important to have a clear separation of what is the workplace, and the resting 
+                        place in your home, if there is no specific room for that available, try to organize at least a desk that is exclusive for work.
+                    </li>
+                    <li><strong>Have clear working hours and routine,</strong> try to start and stop working around the same time every day, that is important not only
+                        to separate concerns but also for your team to know when to find you online.
+                        Some people even like to have a work start ritual, like changing to work clothes, pouring some coffee, etc.. find what works best for you.
+                    </li>
+                    <li><strong>Inform your partner and family members about your working hours,</strong> and that during this time you are not available, just like if
+                        you were out to the office. Having a separate working space will also help a lot to make this clear.
+                    </li>
+                </ol>
+                <a class="reference" href="https://medium.com/@filipeportes/remote-work-tips-1f3495a7b19" target="_blank">post reference: Medium</a>
+
+            </article>
+
+        </section>
+
+        <!--Form-->
+        <div id="subscribe" class="form-container form-desktop">
+            <h1 class="form-title">Subscribe</h1>
+            <form class="form" action="" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <input class="form-button" type="button" onclick="formSubmit()" value="subscribe">
+            </form>
+        </div>
+    </main>
+
+        
+    <footer class="footer">
+        <div class="footer-container">
+
+            <span>tamiris.css@gmail.com</span>
+            <p>@2020</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/tamiris-s-515947b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/TamirisCss" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://codepen.io/TamirisCristine" target="_blank"><i class="fab fa-codepen"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
