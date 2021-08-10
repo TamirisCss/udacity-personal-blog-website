@@ -1,39 +1,49 @@
 header {
-    background-color: var(--dark);
-    margin-bottom: 3em;
-}
-.nav-menu {
-    margin: 0 1em;
-    padding: 1.5em 0;
+  background-color: var(--dark);
+  margin-bottom: 3em;
 }
 
-.nav-menu ul{
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    text-transform: uppercase;
+.nav-menu {
+  margin: 0 1em;
+  padding: 1.5em 0;
+}
+
+.nav-menu ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .nav-menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 400;
-    color: var(--white);
-    transition: .3s all;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--white);
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }
 
 .nav-menu a:hover {
-    color: var(--light-green);
+  color: var(--light-green);
 }
 
 @media screen and (max-width: 500px) {
-    .nav-menu ul{
-        flex-direction: column;
-    }
+  .nav-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
+/*# sourceMappingURL=navMenu.css.map */

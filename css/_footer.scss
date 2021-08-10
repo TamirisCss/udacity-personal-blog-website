@@ -1,0 +1,36 @@
+.footer {
+    background-color: $dark-color;
+    padding: 1.5em 0;
+    color: $white;
+    .footer-container {
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+        p {
+            font-size: .80em;
+            text-align: center;
+        }
+    }
+    .social .fab {
+        font-size: 23px;
+        color: $white;
+        &:hover {
+            color: $light-green;
+        }
+    }
+    a {
+        padding: 7px 0 7px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer p {
+        font-size: .80em;
+        text-align: end;
+    }
+}

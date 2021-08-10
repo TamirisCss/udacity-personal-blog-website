@@ -1,0 +1,56 @@
+.blog-title {
+    margin: 1em 0;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+.cards {
+    margin: 3em auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: $light-background;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .card-img img {
+            width: 100%;
+            height: 18rem;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-content {
+            padding: 1em;
+            .card-title {
+                font-size: 1.5em;
+                margin: .50em 0;
+                font-family: 'Abril Fatface', cursive;
+            }
+            .card-p {
+                font-size: 1em;
+                margin-bottom: .90em;
+            }
+            .card-button {
+                background-color: $dark-color;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                font-size: 1em;
+                transition: all .3s ease;
+                &:hover {
+                    background-color: $light-green;
+                }
+            }
+        }
+    }
+}
+
+
+
+

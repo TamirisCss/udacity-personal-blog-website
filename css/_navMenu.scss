@@ -1,0 +1,35 @@
+header {
+    background: $dark-color;
+    margin-bottom: 3em;
+}
+.nav-menu {
+    margin: 0 1em;
+    padding: 1.5em 0;
+    ul{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 400;
+        color: $white;
+        transition: .3s all;
+        &:hover {
+            color: $light-green;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-menu ul{
+        flex-direction: column;
+    }
+}
